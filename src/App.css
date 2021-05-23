@@ -1,38 +1,80 @@
+* {
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  background-color: #fafafa;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login_logo {
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form > Button {
+  background-color: lightgray;
+}
+
+.header {
+  background-color: white;
+  padding: 10px;
+  padding-left: 20px;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  margin-bottom: 45px;
+}
+
+.header > img {
+  height: 40px;
+  object-fit: contain;
+}
+
+.image_upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  /* height: 100px; */
+}
+
+.image_upload > input {
+  /* margin: 5px; */
+  width: 60%;
+  padding: 5px;
+  border: 1px solid grey;
+  margin-left: 20%;
+}
+
+.upload_image_wrapper {
+  width: 100%;
+  background-color: white;
+}
+
+.image_upload > progress {
+  margin-left: 21%;
+  width: 60%;
+}
+
+.app_body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom {
+  margin-bottom: 100px;
 }
